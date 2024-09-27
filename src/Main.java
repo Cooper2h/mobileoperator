@@ -3,21 +3,21 @@ public class Main {
 
         // переменные для входных данных и
         // параметров программы
-        int InitialBalance = 100; //начальный счет
-        int Amount = 1100; // сумма пополнения
+        int initialBalance = 100; //начальный счет
+        int amount = 1100; // сумма пополнения
 
         // бонус
         int bonus = 0;
-        if (Amount > 1000) {
-        bonus = (Amount - 1000) / 10;
+        if (amount > 1000) {
+            bonus = (amount - 1000) / 10;
 
-    }
+        }
 
-    //Итоговый баланс
-    int balance = InitialBalance + Amount + bonus;
+        //Итоговый баланс
+        int balance = initialBalance + amount + bonus;
 
 //Результат
-    System.out.println("Итоговый баланс: "+ balance +" рублей");
-    System.out.println("Бонус: "+bonus +" рублей");
-}
+        System.out.println("Итоговый баланс: " + balance + " рублей");
+        System.out.println("Бонус: " + bonus + " рублей");
+    }
 }
